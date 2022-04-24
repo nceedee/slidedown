@@ -1,0 +1,119 @@
+@font-face{
+    font-family: regular;
+    src: url(./fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: regular;
+    font-size: 12px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.header h1{
+    font-size: 12px;
+}
+
+.header h1:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    width: 200px;
+    right: 0;
+    position: absolute;
+    display: none;
+    
+   
+}
+
+@keyframes bobo{
+    from{
+        left: 0;
+        
+    }
+
+    to{
+      right: 30;
+      
+    }
+}
+
+ul li{
+    font-size: 20px;
+    padding: 8px;
+    border: 1px solid white;
+}
+
+ul li:hover{
+    opacity: .5;
+}
+
+
+.slide:hover .slidedown ul {
+    display: block;
+    animation-name: bobo;
+    animation-duration: 20s;
+    animation-delay: .5s;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+    transition: 15s;
+    position: absolute;
+    
+}
+
+.emoji{
+    font-size: 20px;
+    text-align: center;
+}
+
+.grin{
+    color: rgb(194, 140, 39);
+    font-size: 140px;
+}
+
+.clickmenu{
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+}
+
+.warning{
+    font-family: monospace;
+    margin: 20px;
+    /* display: none; */
+    
+}
+
+.warn{
+    color: red;
+}
+
+.header h1:hover .warning{
+    display: block;
+}
+    
+
+
+
+
